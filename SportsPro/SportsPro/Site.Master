@@ -1,0 +1,72 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.master.vb" Inherits="SportsPro.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Sports Pro</title>
+    <style>
+        .header1 {
+            width: 100%;
+        }
+        .header2 {
+            width: 100%;
+            color: red;
+        }
+        .Row1 {
+            background-color: yellow;
+        }
+        .Columns1 {
+            width: 125px;
+            height: 45px;
+        }
+        .Columns2 {
+            height: 45px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+         <h1 class="header2" style="font-family: 'Comic Sans MS'; font-size: 72px; color: #FF0000">SportsPro</h1>
+         <h3 class="header1">Sports management software for the sports enthusiast</h3>
+
+            <table class="header1">
+                <tr class="Row1">
+                    <td>
+                        <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" 
+                            StaticDisplayLevels="2" StaticSubMenuIndent="10px" BackColor="Yellow" 
+                            DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="Large" ForeColor="#6666FF" StaticEnableDefaultPopOutImage="False">
+                            <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                            <DynamicMenuStyle BackColor="#FFFBD6" />
+                            <DynamicSelectedStyle BackColor="#FFCC66" />
+                            <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                            <StaticSelectedStyle BackColor="#FFCC66" />
+                        </asp:Menu>
+                        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+
+                    </td>
+                </tr>
+            </table>
+        <br />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+       
+        </asp:ContentPlaceHolder>
+
+    <br />
+        <table class="header1">
+            <tr class="Row1">
+                <td class="Columns2">
+                    <p>To contact us, call us at 800-555-0400 or email us at 
+                        <asp:HyperLink ID="EmailLink2" runat="server" NavigateUrl="mailto:sportspro@sportsprosoftware.com">sportspro@sportsprosoftware.com</asp:HyperLink></p>          
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="Default.aspx" title="Home"  description="Home Page">
+      <siteMapNode url="CustomerSupport.aspx" title="Customer Support" description="Customer Support page">
+        <siteMapNode url="ProductRegistration.aspx" title="Register products" description="Product Registration" />
+        <siteMapNode url="CustomerSurvey.aspx" title="Complete customer survey" description="Survey" />
+        <siteMapNode url="ContactUs.aspx" title="Contact us" description="Contact information" />
+      </siteMapNode>
+      <siteMapNode url="TechnicianSupport.aspx" title="Technician Support"  description="Technician Support information">
+        <siteMapNode url="CustomerIncidentDisplay.aspx" title="Display customer incidents" description="Customer Incidents" />
+        <siteMapNode url="IncidentUpdate.aspx" title="Update incidents" description="Incident update" />
+      </siteMapNode>
+      <siteMapNode url="Administration.aspx" title="Administration" description="Administration page">
+        <siteMapNode url="ProductMaintenance.aspx" title="Maintain products" description="Product maintenance" />
+        <siteMapNode url="CustomerMaintenance.aspx" title="Maintain customers" description="Customer maintenance" />
+        <siteMapNode url="TechnicianMaintenance.aspx" title="Maintain technicians" description="Tech maintenance" />
+        <siteMapNode url="IncidentDisplay.aspx" title="Display incidents" description="Incidents display" />
+        <siteMapNode url="CustomerDisplay.aspx" title="Display customers" description="Customers display" />
+        <siteMapNode url="TechnicianIncidentSummary.aspx" title="Display incidents by Technician" description="Technician Incident Summary" />
+      </siteMapNode>
+      <siteMapNode url="Map.aspx" title="Site Map" description="Site Map" />
+    </siteMapNode>
+</siteMap>
